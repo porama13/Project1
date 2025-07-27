@@ -305,7 +305,7 @@
 
   // ฟังก์ชันส่งคะแนนไป Google Sheets ผ่าน Apps Script Web App URL
   function submitScoreToSheet(name, score) {
-    const endpoint = "https://script.google.com/macros/s/AKfycbysIKM2k5THn_3FL-NXfAolpxp7CDJvylPYpGxVghuT/dev"; // เปลี่ยนเป็น URL ของคุณ
+    const endpoint = "https://script.google.com/macros/s/AKfycbzUn4eOgqitlO3WsHGwD4tADZS1HL04hQ5C6fE_8L3-pr4J1yiobdQtrt2gLaQ2FGW8BQ/exec"; // เปลี่ยนเป็น URL ของคุณ
 
     fetch(endpoint, {
       method: "POST",
