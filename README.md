@@ -270,6 +270,8 @@
     }
   }
 
+  
+
   function explode() {
     gameOver = true;
     document.getElementById("explosion").style.display = "flex";
@@ -307,19 +309,23 @@
   function submitScoreToSheet(name, score) {
     const endpoint = "https://script.google.com/macros/s/AKfycbzUn4eOgqitlO3WsHGwD4tADZS1HL04hQ5C6fE_8L3-pr4J1yiobdQtrt2gLaQ2FGW8BQ/exec"; // เปลี่ยนเป็น URL ของคุณ
 
-    fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, score })
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log("✅ ส่งคะแนนไปยัง Google Sheets เรียบร้อย:", data);
-    })
-    .catch(error => {
-      console.error("❌ ส่งคะแนนไม่สำเร็จ:", error);
-    });
-  }
+    function submitScoreToSheet(name, score) {
+  const endpoint = "https://script.google.com/a/macros/anw.ac.th/s/AKfycbyfpUONMdCqSTM4wCy6JL0-cghFPeJksoMMbQ--7KsHFEZzb6Y6xwafvi8-h5XxXH7MFA/exec"; // เปลี่ยนเป็นของคุณ
+
+  fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, score })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log("ส่งคะแนนเรียบร้อย:", data);
+  })
+  .catch(error => {
+    console.error("ส่งคะแนนไม่สำเร็จ:", error);
+  });
+}
+
 </script>
 
 </body>
