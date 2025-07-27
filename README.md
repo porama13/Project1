@@ -34,7 +34,7 @@
         return;
       }
 
-      const endpoint = "https://script.google.com/macros/s/AKfycbwXXX/exec"; // แทนด้วย URL ของคุณ
+      const endpoint = "https://script.google.com/a/macros/anw.ac.th/s/AKfycbyfpUONMdCqSTM4wCy6JL0-cghFPeJksoMMbQ--7KsHFEZzb6Y6xwafvi8-h5XxXH7MFA/exec"; // แทนด้วย URL ของคุณ
 
       fetch(endpoint, {
         method: "POST",
